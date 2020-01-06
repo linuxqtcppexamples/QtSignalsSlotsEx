@@ -1,5 +1,14 @@
 # QtSignalsSlotsEx
-Qt Signals and Slots Examples
+Qt Signals & Slots:
+Signals & Slots:(https://en.wikipedia.org/wiki/Signals_and_slots)
+-----------------
+
+Signals and slots is a language construct introduced in Qt for communication between objects[1] which makes it easy to implement the observer pattern while avoiding boilerplate code. The concept is that GUI widgets can send signals containing event information which can be received by other widgets / controls using special functions known as slots. This is similar to C/C++ function pointers, but signal/slot system ensures the type-correctness of callback arguments.
+
+The signal/slot system fits well with the way graphical user interfaces are designed. Similarly, the signal/slot system can be used for other non-GUI usages, for example asynchronous I/O (including sockets, pipes, serial devices, etc.) event notification or to associate timeout events with appropriate object instances and methods or functions. It is easy to use and no registration/deregistration/invocation code need to be written, because Qt's metaobject compiler (MOC) automatically generates the needed infrastructure.
+
+A commonly used metaphor is a spreadsheet. A spreadsheet has cells that observe the source cell(s). When the source cell is changed, the dependent cells are updated from the event.
+
 Signals & Slots:(https://doc.qt.io/qt-5/signalsandslots.html)
 -----------------
 Signals and slots are used for communication between objects. The signals and slots mechanism is a central feature of Qt and probably the part that differs most from the features provided by other frameworks. Signals and slots are made possible by Qt's meta-object system.
@@ -411,3 +420,5 @@ How Qt Signals and Slots Work:
 https://woboq.com/blog/how-qt-signals-slots-work.html
 https://woboq.com/blog/how-qt-signals-slots-work-part2-qt5.html
 https://woboq.com/blog/new-signals-slots-syntax-in-qt5.html
+
+
